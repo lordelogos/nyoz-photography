@@ -1,3 +1,11 @@
+// remove page preloader
+var loader = document.querySelector('#preloader');
+
+window.addEventListener('load', () => {
+    loader.style.display = "none"
+})
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 let hero = gsap.timeline({ defaults: {ease: "power4.inOut", duration: 2}, scrollTrigger: {trigger: 'header', toggleActions: 'play none none none' }})
