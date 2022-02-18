@@ -20,7 +20,7 @@ header{
     background-size: auto;
 
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: white;
 }
 
@@ -52,6 +52,15 @@ header{
         background-position: center center;
         background-size: auto;
         color: white;
+    }
+
+    header::before{
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(63, 32, 38, .4);
+        z-index: 20;
     }
 }
 
@@ -239,6 +248,10 @@ header > section{
 }
     .exit-icon{
         font-size: 16px;
+    }
+
+    header > section{
+        z-index: 25;
     }
 }
 
@@ -955,7 +968,7 @@ button:hover{
 
 #preloader{
     position: fixed;
-    background: #3F2026 url('./assets/loader.gif') no-repeat center center;
+    background: #fff url('./assets/loader.gif') no-repeat center center;
     width: 100vw;
     height: 100vh;
     top: 0;
