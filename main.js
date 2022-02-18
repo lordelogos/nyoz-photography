@@ -29,6 +29,10 @@ stack.to('#stack1', {keyframes: [
     {x:-20, duration: .5},
     {x: "100vw", duration: 1.5},
   ]})
+  .to('#stack4', {keyframes: [ 
+    {x:-20, duration: .5},
+    {x: "100vw", duration: 1.5},
+  ]})
 
   let foot = gsap.timeline({ defaults: {ease: "power4.inOut", duration: 2}, scrollTrigger: {trigger: '.footer', toggleActions: 'play none none none' }});
 
