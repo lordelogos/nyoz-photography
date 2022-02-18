@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Cinzel+Decorative:wght@400;700&family=DM+Sans:wght@400;500;700&family=Source+Serif+Pro:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/bg.png');
+    display: flex;
+    flex-direction: column;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+}
+
+header nav{
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.16) 0.01%, rgba(255, 255, 255, 0.16) 100%);
+    backdrop-filter: blur(40px);
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.logo > h2{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'Anonymous Pro', monospace;
+    box-sizing: border-box;
+}
+
+header > nav > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > nav > ul > li {
+    margin-right: 2vw;
+    font-size: 16px;
+}
+
+header > nav > ul > li:last-child{
+    margin-right: 0;
+}
+
+header > nav > button{
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 40px;
+    color: white;
+}
+
+header > section{
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    position: relative;
+}
+
+.float-text-right{
+    width: 120px;
+    margin: 0 0 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.float-text-right > p{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+.float-text-left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.float-text-left > h1{
+    font-size: 72px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 400;
+}
+
+.float-text-left > h1 > span{
+    padding: 0;
+}
+
+.float-text-left > p{
+     font-size: 16px;
+     font-family: 'Source Serif Pro', serif;
+     font-weight: 300;
+     width: 240px;
+}
+
+.exit-icon{
+    font-size: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: 300;
+}
+
+.segment-1{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.segment-1 .image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80%;
+    width: 54%;
+    margin-right: 5vw;
+}
+
+.segment-1 .image img:first-child{
+    position: absolute;
+    top: 9%;
+    left: 0;
+    height: 45%;
+    aspect-ratio: 1.15 / 1;
+}
+
+.segment-1 .image img:last-child{
+    height: 55%;
+    aspect-ratio: 1;
+    margin-left: 17vw;
+}
+
+.segment-1 > text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.segment-1 .text > h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.segment-1 .text p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+}
+
+.segment-2{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.segment-2 > .text{
+    width: 50%;
+}
+
+.segment-2 > .text > h1{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.segment-2 .text p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+}
+
+.segment-2 .text button{
+    border-radius: 40px;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: solid 2px;
+    margin: 3vh 0;
+}
+
+.segment-2 > .images{
+    width: 50%;
+}
+
+.image-stack{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-stack:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    width: 80%;
+    border-bottom: solid 15px;
+    filter: blur(25px);
+}
+
+.image-stack img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    aspect-ratio: 1/1;
+}
+
+.image-stack img:last-child{
+    position: relative;
+    z-index: 0;
+    transform:translate(0,0);
+    top: 0;
+    left: 0;
+    width: 85%;
+}
+
+#stack1{
+    z-index: 10;
+}
+
+#stack2{
+    z-index: 8;
+}
+
+#stack3{
+    z-index: 6;
+}
+
+#stack4{
+    z-index: 4;
+}
+
+.model-showcase{
+    width: 100%;
+    max-width: 1000px;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.model-showcase > h1{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 4vh;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.model-showcase > p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    width: 50%;
+    text-align: center;
+}
+
+.showcase-images{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+.showcase-images > img{
+    width: 30%;
+    aspect-ratio: 1.1/1;
+}
+
+.showcase-images > img:last-child{
+    width: 25%;
+}
+
+.model-showcase > button{
+    border-radius: 40px;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: solid 2px;
+    margin: 3vh 0;
+}
+
+.footer{
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 180px auto;
+}
+
+.footer-outline{
+    height: 20vh;
+    width: 70%;
+    background: #F3E7EA;
+    border-radius: 10px;
+    position:absolute;
+    top: 0;
+}
+
+#outline-1{
+    background: #FAF5F6;
+    top: -120px;
+    width: 80%;
+}
+
+#outline-2{
+    background: #F6EEF0;
+    top: -80px;
+    width: 75%;
+}
+
+#outline-3{
+    top: -40px;
+}
+
+.footer-review{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    background-color: #3F2026;
+    position: relative;
+    min-height: 20vh;
+    margin-bottom: 10vh;
+    padding: 20px 50px 40px;
+    border-radius: 10px;
+}
+
+.footer-review > p> i{
+    color: white;
+    font-size: 1.6em;
+}
+
+.opening{
+    top: -24px;
+    left: 0;
+}
+
+.closing{
+    bottom:  0;
+    right: 0;
+}
+
+
+.footer-review > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    bottom: -50px;
+    height: 100px;
+}
+
+.footer-review > div > img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-review > div >h3{
+    font-size: 24px;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    color: #3F2026;
+
+}
+
+.footer-review > p{
+    color: white;
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.65em;
+    line-height: 1.2em;
+    position: relative;
+}
+
+.control-btn{
+    position: absolute;
+    top: calc(50% - 35px);
+    height: 70px;
+    width: 70px;
+    background-color: #3F2026;
+    box-shadow: 6px 6px 12px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: solid transparent;
+}
+
+.control-btn > i{
+    color: white;
+    font-size: 30px;
+}
+
+#prev{
+    left: -35px;
+}
+
+#next{
+    right: -35px;
+}
+
+.footer-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-group > img{
+    width: 80px;
+    height: 80px;
+    margin-right: 2vw;
+}
+
+.footer-group > img:last-child{
+    margin-right: 0;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: #3F2026;
+    font-weight: 600;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+button{
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    filter: brightness(1.5)
+}
