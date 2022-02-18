@@ -20,7 +20,7 @@ header{
     background-size: auto;
 
     background-position: center center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     color: white;
 }
 
@@ -251,6 +251,10 @@ header > section{
     }
 
     header > section{
+        z-index: 25;
+    }
+
+    header nav{
         z-index: 25;
     }
 }
